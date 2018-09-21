@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Cinemahub | Add Movies{% endblock title %}
+{% block content %}
+<h1>Add Movie<h1>
+	<form method="POST"> {% csrf_token %}
+		{{form.as_p}}
+		<!-- <input type="text" name="movie_name" placeholder="Movie Name"></br>
+		<input type="text" name="genre" placeholder="Genres"></br>
+		<input type="text" name="director" placeholder="Director"></br> -->
+		<button type="submit">Save</button>
+	</form>
+{% endblock content %}

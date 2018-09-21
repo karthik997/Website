@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Cinemahub | Movies{% endblock title %}
+{% block content %}
+<h1>{{object.title}} <small>{{object.genre}}</small><h1>
+<p>{{object.director}}</p>
+<p>{{object.release_date}}, Updated {{object.updated|timesince}} ago.</p>
+{% endblock content %}

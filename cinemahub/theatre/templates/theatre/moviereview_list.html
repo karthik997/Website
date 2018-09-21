@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Cinemahub | Movies{% endblock title %}
+{% block content %}
+<h1>Movies<h1>
+<ul>
+	{% for obj in object_list %}
+  	<li><a href="/movies/{{obj.slug}}/">{{obj}}</a>
+    </br>{{obj.genre}}
+    </br>{{obj.director}}</li>
+	{% endfor %}
+</ul>{% endblock content %}

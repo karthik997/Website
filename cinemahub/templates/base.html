@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        {% include "snippets/css.html" %}
+        <title>{% block title %}{% endblock title %}</title>
+    </head>
+    <body>
+        <h1>CINEMAHUB.com</h1>
+        <div class="containers">
+            {% include "snippets/nav.html" %}
+            {% block content %}HELLO{% endblock content %}
+        </div>
+    </body>
+    {% include "snippets/js.html" %}
+</html>
