@@ -1,2 +1,1 @@
-### Django Project!!
- 
+### Django Project!!........
